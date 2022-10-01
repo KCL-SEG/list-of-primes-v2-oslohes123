@@ -4,7 +4,7 @@
 import math
 def primes(number_of_primes):
     if number_of_primes < 1:
-        raise ValueError(f"ValueError")
+        raise ValueError()
     list = [2]
     divided = False
     counter = 3
@@ -20,5 +20,3 @@ def primes(number_of_primes):
         divided = False
         counter += 1
     return list
-
-primes(0)
